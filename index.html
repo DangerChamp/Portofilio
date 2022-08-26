@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <title>My Portfolio.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <nav class="nav">
-                    <a href="index.html" class="logo">Portfolio.</a>
-                    <ul class="nav-list">
-                        <li>
-                            <a href="index.html" class="nav-link">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Socials</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Skills</a>
-                        </li>
-                    </ul>
-                </nav> 
-            </div>
-        </header>         
-        <button id = "btnScrollToTop">
-            <span class="material-icons">arrow_upward</span>
-        </button>
-        <div id="part1">
-            <div id="Welcome">
-                <h1>Welcome to my website.</h1>
-                <p class = subtitle>I hope you enjoy your time here.</p>
-            </div>
-        </div>
-        <div id = "part2">
-            <div>
-                <p>My name is Filip.</p>
-                <p class = subtitle2>And I have been coding for 3 months now.</p> 
-            </div>
-        </div>
-        <script>
-            const btnScrollToTop = document.querySelector("#btnScrollToTop");
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="logo">Portfolio.</a>
+          <ul class="nav-list">
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Socials</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Skills</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <button id="btnScrollToTop">
+      <span class="material-icons">arrow_upward</span>
+    </button>
+    <div id="part1">
+      <div id="Welcome">
+        <h1>Welcome to my website.</h1>
+        <p class="subtitle">I hope you enjoy your time here.</p>
+      </div>
+    </div>
+    <div id="part2">
+      <div>
+        <p>My name is Filip.</p>
+        <p class="subtitle2">And I have been coding for 3 months now.</p>
+      </div>
+    </div>
+    <script>
+      const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
-            btnScrollToTop.addEventListener("click", function () {
-                $("html, body").animate({scrollTop: 0}, "smooth");
-            });
-            window.addEventListener('scroll', function () {
-                let header = document.querySelector('header');
-                let windowPosition = window.scrollY > 0;
-                header.classList.toggle('scrolling-active', windowPosition);
-            })
-        </script>
-    </body>
+      btnScrollToTop.addEventListener("click", function () {
+        $("html, body").animate({ scrollTop: 0 }, "smooth");
+      });
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        let windowPosition = window.scrollY > 0;
+        header.classList.toggle("scrolling-active", windowPosition);
+      });
+    </script>
+  </body>
 </html>
-
